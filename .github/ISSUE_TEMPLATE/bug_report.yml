@@ -1,0 +1,98 @@
+name: Bug report
+description: Create a report to help us improve
+title: "[Component] - [Area] - [Bug]"
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill out this template when reporting a bug. Keep answers concise.
+        Remove guidance comments before submitting.
+
+  - type: input
+    id: bug_title
+    attributes:
+      label: Bug Title
+      description: Short, descriptive title for the bug
+      placeholder: e.g., Login button not responding on mobile devices
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe the bug, the observed behavior, who is affected, and why it's a problem.
+      placeholder: |
+        Example: Users are unable to log in on mobile devices because the login button does not respond to taps. This affects all mobile users and prevents them from accessing their accounts.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: Provide step-by-step instructions to reproduce the issue
+      placeholder: |
+        1. Given I am on the login page on a mobile device,
+        2. When I tap the login button,
+        3. Then nothing happens and I remain on the login page
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: Attach screenshots or recordings if helpful (drag and drop files here)
+      placeholder: Drag and drop images or paste URLs here
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: reproducibility
+    attributes:
+      label: Reproducibility
+      description: How often can you reproduce this issue?
+      options:
+        - label: Always
+        - label: Sometimes
+        - label: Unable to reproduce
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: severity
+    attributes:
+      label: Severity / Impact
+      description: What is the severity of this bug?
+      options:
+        - label: Blocker
+        - label: High
+        - label: Medium
+        - label: Low
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define the criteria for considering this bug fixed
+      placeholder: |
+        - [ ] Given I am on the login page on a mobile device, when I tap the login button, then the login process initiates
+      value: |
+        - [ ] Given <context>, when <action>, then <expected>
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: Additional context / References
+      description: Links to related issues, PRs, or notes
+      placeholder: |
+        - Related issue: #123
+        - Documentation: https://...
+    validations:
+      required: false

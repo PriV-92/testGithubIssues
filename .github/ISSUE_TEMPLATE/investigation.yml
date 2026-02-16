@@ -1,0 +1,89 @@
+name: Investigation
+description: Create an issue for an investigation that needs to be done
+title: "[Functionality] - [Investigation]"
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for investigation tasks and research spikes. Keep answers concise.
+        Remove guidance comments before submitting.
+
+  - type: input
+    id: investigation_title
+    attributes:
+      label: Investigation Title
+      description: Short, descriptive title for the investigation
+      placeholder: e.g., Research authentication performance bottlenecks
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What specific question or hypothesis is this investigation trying to answer?
+      placeholder: |
+        Example: What is causing the 2-second delay in user authentication, and can we reduce it to under 500ms?
+    validations:
+      required: true
+
+  - type: textarea
+    id: background
+    attributes:
+      label: Background
+      description: Brief context and why this investigation matters.
+      placeholder: |
+        Example: Users have reported slow login times. This investigation will help us identify the root cause and improve user experience.
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: Define what will and will not be covered in this investigation
+      placeholder: |
+        - In-scope: briefly list what will be investigated
+        - Out-of-scope: what will NOT be covered
+      value: |
+        - In-scope: briefly list what will be investigated
+        - Out-of-scope: what will NOT be covered
+    validations:
+      required: true
+
+  - type: input
+    id: timeline
+    attributes:
+      label: Timeline
+      description: Estimated timebox for this investigation
+      placeholder: e.g., 2 days
+    validations:
+      required: false
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Deliverables
+      description: What will be produced at the end of this investigation?
+      placeholder: |
+        - Summary of findings
+        - Recommendations
+        - Supporting data, logs, or PoC
+      value: |
+        - Summary of findings
+        - Recommendations
+        - Supporting data, logs, or PoC
+    validations:
+      required: true
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Attachments / References
+      description: Links to docs, issues, or prior research
+      placeholder: |
+        - Related documentation: https://...
+        - Prior investigation: #456
+    validations:
+      required: false

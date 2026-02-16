@@ -1,0 +1,91 @@
+name: Feature request
+description: Suggest an idea for this project
+title: "[Functionality] - [Feature]"
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill out this template when requesting a new feature. Keep answers concise.
+        Remove guidance comments before submitting.
+
+  - type: input
+    id: feature_title
+    attributes:
+      label: Feature Title
+      description: Short, descriptive title for the feature
+      placeholder: e.g., Add dark mode support
+    validations:
+      required: true
+
+  - type: textarea
+    id: feature_description
+    attributes:
+      label: Feature
+      description: Description of feature to be implemented.
+      placeholder: |
+        Example: Add a dark mode theme option that users can toggle in their settings. This will reduce eye strain for users working in low-light environments.
+    validations:
+      required: true
+
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Requirements
+      description: List the key requirements for this feature
+      placeholder: |
+        - Feature needs to do x
+        - Feature needs to also do y
+      value: |
+        - Feature needs to do x
+        - Feature needs to also do y
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Define clear, testable criteria for this feature (BDD-style)
+      placeholder: |
+        - [ ] Given I am logged in, when I navigate to settings, then I see a dark mode toggle
+        - [ ] Given dark mode is enabled, when I view any page, then the color scheme is dark
+      value: |
+        - [ ] Given <context>, when <action>, then <expected>
+        - [ ] Additional clear, testable criteria
+    validations:
+      required: true
+
+  - type: textarea
+    id: non_goals
+    attributes:
+      label: Non-Goals (Out of scope)
+      description: What this request will NOT include
+      placeholder: |
+        - Automatic dark mode based on time of day
+        - Custom color schemes beyond light/dark
+    validations:
+      required: false
+
+  - type: textarea
+    id: risks_mitigations
+    attributes:
+      label: Risks & Mitigations
+      description: Potential risks and how to mitigate them
+      placeholder: |
+        - Risk → Mitigation
+      value: |
+        - Risk → Mitigation
+    validations:
+      required: false
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Attachments / References
+      description: Links to mockups, specs, user research, or related issues
+      placeholder: |
+        - Design mockup: https://...
+        - Related issue: #123
+    validations:
+      required: false
