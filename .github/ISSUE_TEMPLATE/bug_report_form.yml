@@ -7,16 +7,6 @@ body:
     attributes:
       value: |
         Fill out this template when reporting a bug. Keep answers concise.
-        Remove guidance comments before submitting.
-
-  - type: input
-    id: bug_title
-    attributes:
-      label: Bug Title
-      description: Short, descriptive title for the bug
-      placeholder: e.g., Login button not responding on mobile devices
-    validations:
-      required: true
 
   - type: textarea
     id: problem
@@ -49,7 +39,7 @@ body:
     validations:
       required: false
 
-  - type: checkboxes
+  - type: dropdown
     id: reproducibility
     attributes:
       label: Reproducibility
@@ -61,7 +51,7 @@ body:
     validations:
       required: true
 
-  - type: checkboxes
+  - type: dropdown
     id: severity
     attributes:
       label: Severity / Impact

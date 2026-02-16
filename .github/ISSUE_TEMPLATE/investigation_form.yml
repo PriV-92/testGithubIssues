@@ -7,16 +7,6 @@ body:
     attributes:
       value: |
         Use this template for investigation tasks and research spikes. Keep answers concise.
-        Remove guidance comments before submitting.
-
-  - type: input
-    id: investigation_title
-    attributes:
-      label: Investigation Title
-      description: Short, descriptive title for the investigation
-      placeholder: e.g., Research authentication performance bottlenecks
-    validations:
-      required: true
 
   - type: textarea
     id: question
