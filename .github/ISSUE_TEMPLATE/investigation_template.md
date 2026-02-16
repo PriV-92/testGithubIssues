@@ -1,5 +1,5 @@
 ---
-name: Investigation
+name: Investigation Template
 about: Create an issue for an investigation that needs to be done.
 title: "[Functionality] - [Investigation]"
 labels: ''

@@ -1,4 +1,4 @@
-name: Bug report
+name: Bug report Form
 description: Create a report to help us improve
 title: "[Component] - [Area] - [Bug]"
 labels: []
@@ -7,15 +7,6 @@ body:
     attributes:
       value: |
         Fill out this template when reporting a bug. Keep answers concise.
-
-  - type: input
-    id: bug_title
-    attributes:
-      label: Bug Title
-      description: Short, descriptive title for the bug
-      placeholder: e.g., Login button not responding on mobile devices
-    validations:
-      required: true
 
   - type: textarea
     id: problem
